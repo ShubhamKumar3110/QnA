@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem;
+}
+
+#sets{
+    position: relative;
+    background: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.set{
+    position: relative;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    background: blueviolet;
+    cursor: pointer;
+}
+.set:hover{
+    box-shadow: 0 0.5rem 2rem red;
+    
+}
+
+.set h2{
+    position: absolute;
+    top: 22%;
+    right: 4rem;
+}
+
+.set h4{
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+}
+
+.set a{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@media screen and (max-width:800px) {
+    #sets{
+        grid-template-columns: 1fr;
+    }
+    
+}
