@@ -4,30 +4,66 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url(Background_Landslide.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 .heading{
     text-align: center;
-    text-transform: uppercase;
+    color: white;
     margin: 2rem;
+    font-size: 80px;
+    font-weight: 400;
+    
+    font-family: 'Exo', sans-serif;
+
+    /* background: #515265b0; */
+    
 }
+
+/* #56586aab
+#2b2c39a1
+#1c4b26ab;
+#515265b0
+#3f3b3b61
+#7d7d7d57 */
 
 #sets{
     position: relative;
-    background: aqua;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /* overflow: scroll; */
 }
 
 .set{
     position: relative;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 2rem;
-    background: blueviolet;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: larger;
+    color: aliceblue;
     cursor: pointer;
-}
-.set:hover{
-    box-shadow: 0 0.5rem 2rem red;
+    border-style: solid;
+    border-color: transparent;
+    /* border-width: 0px 3px 0px 3px; */
+    border-width: 2px 0px 2px 0px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Josefin Slab', serif;
     
+
+}
+
+.set:hover{
+    border-color: white;
+    border-radius: 18px;
+}
+
+.set:active{
+    border-color: white;
 }
 
 .set h2{
@@ -49,11 +85,40 @@
     left: 0;
     right: 0;
     z-index: 1;
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: white; */
+}
+.set button{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    /* background: #3f3b3b61;
+    background: #7d7d7d57; */
+    background: #ffffff2b;
+    border: none;
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 @media screen and (max-width:800px) {
     #sets{
         grid-template-columns: 1fr;
+    }
+    body{
+        background-image: url(Background.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
     
 }
